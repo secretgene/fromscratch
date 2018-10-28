@@ -93,7 +93,7 @@ def getAccuracy(testSet, predictions):
 	return (correct/float(len(testSet))) * 100.0
  
 def main():
-	filename = 'pima-indians-diabetes.csv'
+	filename = 'data/pima-indians-diabetes.csv'
 	dataset = readCSV(filename, ',')
 	trainingSet, testSet = splitDataset(dataset, 0.7)
 	print('Split {} rows into train={} and test={} rows'.format(len(dataset), len(trainingSet), len(testSet)))
