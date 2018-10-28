@@ -16,9 +16,9 @@ def load_csv(filename):
 	return dataset
 
 # Convert string column to float
-def str_column_to_float(dataset, column):
-	for row in dataset:
-		row[column] = float(row[column].strip())
+ def str_column_to_float(dataset, column):
+	 for row in dataset:
+		 row[column] = float(row[column].strip())
 
 # Convert string column to integer
 def str_column_to_int(dataset, column):
