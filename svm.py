@@ -25,8 +25,8 @@ class BinarySVM:
             logging.basicConfig(level=logging.WARNING)
 
     def _kernel(self, x, z=None):
-        if z is None:
-            z = x
+         if z is None:
+             z = x
         if self.kernel == 'linear':
             return np.dot(x, z.T)
         elif self.kernel == 'poly':
